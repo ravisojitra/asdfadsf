@@ -1,0 +1,113 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #ffffff;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.left{
+ @apply font-medium lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] text-bluegray_900 uppercase w-[auto]; 
+}
+.user{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.columnshopbymen{
+ @apply font-normal xl:mt-[116px] 2xl:mt-[131px] 3xl:mt-[157px] lg:mt-[93px] text-gray_101 uppercase w-[auto]; 
+}
+.columnshopbymen_five{
+ @apply font-normal lg:leading-[15px] xl:leading-[19px] 2xl:leading-[22px] 3xl:leading-[26px] 2xl:mt-[109px] 3xl:mt-[130px] lg:mt-[77px] xl:mt-[96px] text-center text-gray_101 uppercase w-[86%]; 
+}
+.clock{
+ @apply lg:h-[35px] xl:h-[43px] 2xl:h-[49px] 3xl:h-[58px] lg:w-[34px] xl:w-[42px] 2xl:w-[48px] 3xl:w-[57px]; 
+}
+.RectangleThirteen{
+ @apply lg:h-[382px] xl:h-[477px] 2xl:h-[537px] 3xl:h-[644px] rounded-radius64 w-[31%]; 
+}
+.rowbaggyjoggers{
+ @apply font-semibold lg:text-[17px] xl:text-[21px] 2xl:text-[24px] 3xl:text-[28px] text-indigo_900 underline w-[auto]; 
+}
+.RectangleFortyOne{
+ @apply absolute lg:h-[256px] xl:h-[321px] 2xl:h-[361px] 3xl:h-[433px] rounded-radius24 top-[0] w-[100%]; 
+}
+.RectangleFiftyTwo{
+ @apply lg:h-[320px] xl:h-[401px] 2xl:h-[451px] 3xl:h-[541px] rounded-radius48 w-[24%]; 
+}
+.AboutUsOutSt{
+ @apply font-normal not-italic text-gray_500 w-[auto]; 
+}
+.AboutUsOutSt_One{
+ @apply font-normal lg:mt-[14px] xl:mt-[17px] 2xl:mt-[20px] 3xl:mt-[24px] not-italic text-gray_500 w-[auto]; 
+}
+.AboutUsOutSt_Four{
+ @apply font-normal lg:mt-[12px] xl:mt-[16px] 2xl:mt-[18px] 3xl:mt-[21px] not-italic text-gray_500 w-[auto]; 
+}
+.AboutUsOutSt_Five{
+ @apply font-normal lg:mt-[17px] xl:mt-[21px] 2xl:mt-[24px] 3xl:mt-[28px] not-italic text-gray_500 w-[auto]; 
+}
+.camera{
+ @apply lg:h-[16px] xl:h-[20px] 2xl:h-[23px] 3xl:h-[27px] lg:w-[15px] xl:w-[19px] 2xl:w-[22px] 3xl:w-[26px]; 
+}
+.defaultlinkic1{
+ @apply font-normal lg:ml-[5px] xl:ml-[7px] 2xl:ml-[8px] 3xl:ml-[9px] not-italic text-gray_500 w-[auto]; 
+}
